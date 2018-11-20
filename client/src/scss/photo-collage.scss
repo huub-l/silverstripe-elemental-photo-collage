@@ -1,0 +1,63 @@
+.photo1 {
+    grid-area: photo1;
+}
+
+.photo2 {
+    grid-area: photo2;
+}
+
+.photo3 {
+    grid-area: photo3;
+
+}
+
+.photo4 {
+    grid-area: photo4;
+}
+
+.photo5 {
+    grid-area: photo5;
+}
+
+.photo6 {
+    grid-area: photo6;
+}
+
+
+.photo7 {
+    grid-area: photo7;
+}
+
+.photo8 {
+    grid-area: photo8;
+
+}
+
+.photo9 {
+    grid-area: photo9;
+}
+
+.photo10 {
+    grid-area: photo10;
+}
+
+.grid {
+    max-width: 100vw;
+    /* height: 100vh; */
+    grid-gap: 10px;
+    display: grid;
+    grid-template-areas: ". . . . . . . . . . . photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo4 . . . . . . . . . . . . . . . . ." ". . . . . . . . . . . photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo4 . . . . . . . . . . . . . . . . ." ". . . . . . . . . . . photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo4 . . . . . . . . . . . . . photo9 photo9 photo9 photo9" ". photo1 photo1 photo1 photo1 . . . . . . photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo6 photo6 photo6 photo6 photo6 . . . . . . . . photo9 photo9 photo9 photo9" ". photo1 photo1 photo1 photo1 photo3 photo3 photo3 photo3 photo3 photo3 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo6 photo6 photo6 photo6 photo6 . . . . . . . . photo9 photo9 photo9 photo9" ". photo1 photo1 photo1 photo1 photo3 photo3 photo3 photo3 photo3 photo3 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo6 photo6 photo6 photo6 photo6 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo9 photo9 photo9 photo9" ". photo1 photo1 photo1 photo1 photo3 photo3 photo3 photo3 photo3 photo3 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo6 photo6 photo6 photo6 photo6 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo9 photo9 photo9 photo9" "photo2 photo2 photo2 photo2 photo2 photo3 photo3 photo3 photo3 photo3 photo3 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo4 photo6 photo6 photo6 photo6 photo6 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo9 photo9 photo9 photo9" "photo2 photo2 photo2 photo2 photo2 photo3 photo3 photo3 photo3 photo3 photo3 photo5 photo5 photo5 photo5 photo5 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo9 photo9 photo9 photo9" "photo2 photo2 photo2 photo2 photo2 photo3 photo3 photo3 photo3 photo3 photo3 photo5 photo5 photo5 photo5 photo5 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo9 photo9 photo9 photo9" "photo2 photo2 photo2 photo2 photo2 photo3 photo3 photo3 photo3 photo3 photo3 photo5 photo5 photo5 photo5 photo5 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo9 photo9 photo9 photo9" "photo2 photo2 photo2 photo2 photo2 . . . . . . photo5 photo5 photo5 photo5 photo5 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo8 photo10 photo10 photo10 photo10" ". . . . . . . . . . . photo5 photo5 photo5 photo5 photo5 photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo7 . . . . . . . . photo10 photo10 photo10 photo10" ". . . . . . . . . . . . . . . . photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo7 . . . . . . . . photo10 photo10 photo10 photo10" ". . . . . . . . . . . . . . . . photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo7 . . . . . . . . photo10 photo10 photo10 photo10" ". . . . . . . . . . . . . . . . photo7 photo7 photo7 photo7 photo7 photo7 photo7 photo7 . . . . . . . . . . . .";
+}
+
+.grid .grid--item {
+    background-size: cover;
+}
+
+.grid .grid--item::before {
+    --aspect-ratio: 1.2/1;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+}
